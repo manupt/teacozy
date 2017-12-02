@@ -1,4 +1,4 @@
-/*a, p, div, span, nav, h1, h2, h3, h4, header{
+/*a, p, div, span, nav, h1, h2, h3, h4, h5, header{
   border: 1px solid white;
 }*/
 
@@ -94,6 +94,8 @@ nav span{
 h1, h2, h3, h4, h5{
   margin: 0px;
   padding: 0px;
+  color: seashell;
+  opacity: 0.9;
 }
 
 /* IMAGES */
@@ -101,6 +103,7 @@ h1, h2, h3, h4, h5{
 .teas{
   margin-top: 80px;
   width: 1000px;
+  margin-bottom: 80px;
 }
 
 .teas h2{
@@ -120,12 +123,60 @@ h1, h2, h3, h4, h5{
 }
 
 /*LOCATIONS*/
-
 .locations{
-  background-image: url("../images/backgroundcup.jpg");
-  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
   height: 500px;
   width: 1200px;
-  margin-top: 80px;
+  background-image: url("../images/backgroundcup.jpg");
+  background-size: cover;
+  align-content: center;
+  justify-content: center;
+}
 
+.locations h2{
+  height: 38px;
+  width: inherit;
+  margin-bottom: 15px;
+}
+
+.columns{
+  display: flex;
+  justify-content: center;
+}
+
+.columns div{
+  width: 300px;
+  height: 250px;
+  background-color: black;
+  margin: 10px 20px;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columns p{
+  margin: 0px;
+}
+
+.contacts{
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.contacts h2{
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.contacts h5{
+  margin-bottom: 19px;
+}
+/*FOOTER*/
+footer{
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 22px;
 }
